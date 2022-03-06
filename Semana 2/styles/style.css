@@ -1,0 +1,93 @@
+body{
+            
+    background: rgb(9,6,73);
+    background: linear-gradient(180deg, rgba(9,6,73,1) 0%, rgba(45,50,141,1) 51%, rgba(235,252,255,1) 100%);
+    /*background: linear-gradient(to bottom, rgb(45, 50, 141), white);*/
+    background-repeat: no-repeat;
+  }
+
+  .textoCentrado{
+    text-align: center;
+  }
+
+  .textoVerde{
+    color: rgb(142, 196, 36);
+  }
+
+  .textoRosa{
+    color: rgb(222, 96, 156);
+  }
+
+  .textoClaro{
+    color: rgb(235,252,255);
+  }
+
+  .titulo{
+    color: rgb(142, 196, 36);
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .tituloTabla{
+    text-align: center;
+    color: rgb(45, 50, 141);
+    font-size: 22px;
+  }
+  
+  .textoRosaSombra{
+    color: rgb(222, 96, 156);
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  a{
+    color: rgb(142, 196, 36);
+  }
+
+  a:visited{
+    color: white;
+  }
+  
+  .botonAzul{
+    color: rgb(45, 50, 141);
+  }
+
+  .textoBoton{
+    color: white;
+  }
+
+  .boton{
+    background-color: rgb(150, 161, 204);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .centrarTabla{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+  .image2 {
+    position: absolute;
+    top: 50px;
+    left: 750px;
+  }  
+
+  .imagenCentrada{
+    align-content: center;
+  }

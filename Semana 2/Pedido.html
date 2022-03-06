@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <title>Pastelería</title>
+    </head>
+    <body>
+        <center>
+            <img src="./assets/img/Logo.png">
+        </center>
+        <h1 class="titulo textoCentrado">Aquí se hace TU PEDIDO:</h1>
+
+        <h2 class="textoRosaSombra">Datos de Contanto:</h2>
+        <from action="pedido.js">
+            <label class="textoVerde" for="Nombre">Por favor, ingresa tu nombre:</label><br>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"></label><br>
+            
+            <label class="textoVerde" for="Telefono">Por favor, ingresa un Número Teléfónico:</label><br>
+            <input type="tel" name="Telefono" id="Telefono" placeholder="Teléfono"></label><br>
+            
+            <label class="textoVerde" for="Correo">Por favor, ingresa tu Dirección de correo electrónico:</label><br>
+            <input type="email" name="Correo" id="Correo" placeholder="email"></label><br>
+            
+            <label class="textoVerde" for="Descripcion">Por favor, describe de forma general cómo quieres tu pastel:</label><br>
+            <textarea name="Descripcion" rows="5" cols="50" placeholder="Describe aquí algo que no hayas especificado arriba (forma, color, mensaje)"></textarea>
+            <hr>
+            
+            <!-- Sabor -->
+            <p class="textoVerde">Elige un sabor.</p>
+            <input type="radio" id="Chocolate" name="sabor" value="Chocolate">
+            <label class="textoRosaSombra" for="chocolate">Chocolate</label><br>
+            
+            <input type="radio" id="Frambuesa" name="sabor" value="Frambuesa">
+            <label class="textoRosaSombra" for="Frambuesa">Frambuesa</label><br>
+
+            <input type="radio" id="Cafe" name="sabor" value="Cafe">
+            <label class="textoRosaSombra" for="Cafe">Café</label><br>
+
+            <input type="radio" id="Avellana" name="sabor" value="Avellana">
+            <label class="textoRosaSombra" for="Avellana">Avellana</label><br>
+
+            <input type="radio" id="Piñon" name="sabor" value="Piñon">
+            <label class="textoRosaSombra" for="Piñon">Piñón</label><br>
+            
+
+            <!-- S -->
+            <p>¿Con qué quieres adornado tu pastel?</p>
+            <input type="checkbox" id="fondant" name="fondant" value="Fondant">
+            <label for="fondant">Fondant</label>
+                        
+            <input type="checkbox" id="crema" name="crema" value="Crema">
+            <label for="crema">Crema</label>
+            
+            <input type="checkbox" id="coco" name="coco" value="Coco">
+            <label for="coco">Ralladura de Coco</label>
+
+            <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+            <label for="chocolate">Chipas de Chocolate Amargo</label>
+
+            <input type="checkbox" id="semillas" name="semillas" value="Semillas">
+            <label for="semillas">Semillas (Avellana, Nuez y Piñón)</label><br>
+            <hr>
+               
+            <div style="text-align: center;">
+            <a href="./Resumen.html" >
+                <input class="boton" type="button" value="Enviar">
+                </a>
+            </div>
+                <br><br>
+
+        </from>
+    </body>
+</html>
