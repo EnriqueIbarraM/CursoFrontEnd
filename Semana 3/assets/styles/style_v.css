@@ -1,0 +1,506 @@
+/************ ALIGN ************/
+.footerLeft{
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+
+.tirangleRight{
+  position: absolute;
+  top: 70%;
+  right: 26.5%;
+  z-index: -1;
+  transform: scale(.5);
+}
+
+
+.container {
+    display: flex;
+    flex-flow: row;  
+}
+
+.container > * {
+    flex: 1 100%;
+  }
+
+.containerLocation {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  
+  /*padding: 5px;*/
+}
+
+
+
+/*.containerLocation > * {
+  flex: 5 100%;
+}*/
+  
+.containerV{
+   display: flex;
+   flex-flow: column;
+   justify-content: space-around;
+}
+
+
+.containerContact {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 20px;
+    padding: 50px 20px;
+}
+
+.containerVC{
+  padding: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  /*align-content: flex-start;
+  align-items: flex-start;*/
+}
+
+.header {
+   position: absolute;
+   width: 800px;
+   margin: 0 auto;
+   position: fixed;
+   z-index: 0;
+   /*background: rgba(255, 255, 255, 0.562);*/
+}
+
+#baseMenu {
+  z-index: -1;
+  filter: blur(1px);
+  position: absolute;
+  width: 800px;
+  height: 60px;
+  top: 0px;
+  margin: 0 auto;
+  position: fixed;
+  background-color:rgba(255, 255, 255, 0.849);
+} 
+
+/****** Site Name ******/
+.name{
+    padding-left: 50px;
+    color: #3656d4;
+    font-size: 20px;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    transform: translate(0, 20%);
+    
+  }
+
+/****** Navigation ******/
+.navigation {  
+   height: 60px;
+   position: relative;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-end;
+   z-index: 2;
+   list-style: none;
+   margin: 0;    
+}
+
+.navigation a {
+    top: 50px;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 1em;
+    color: #6d7b93;
+    border-radius: 5px;
+  }
+
+  .navigation a:hover {
+    background: linear-gradient(45deg, #3a5ad8, #2545c3);
+    color: white;
+    box-shadow: 2px 2px 20px 1px #2239534d;
+  }
+
+  .submit{
+    height: 15px;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: translate(15px, 25px);
+    padding: 7px 3em;
+    color: #6d7b93;
+    border-radius: 5px;
+  }
+
+  .submit:hover{
+    background: linear-gradient(45deg, #3a5ad8, #2545c3);
+    color: white;
+    box-shadow: 2px 2px 20px 1px #2239534d;
+  }
+
+/****** Navigation ******/
+
+/****** Main Menu ******/
+.menu{
+    width: 100px;
+    text-align: center;
+    top: 10px;
+    transform: translate(0, 20%);
+  }
+
+/****** Main Menu ******/
+
+/****** Responsive img ******/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imageVaccine{
+  margin-right: 0;
+}
+
+.imageFacemask{
+  width: 100%;
+  max-height: auto;
+  margin-left: 0;
+}
+
+/****** Logo ******/
+.logo {
+    max-width: 25%;
+    height: auto;
+}
+/****** Logo ******/
+
+/************ TEXT ************/
+/****** b ******/
+b1{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+b2{
+  font-size: 30px;
+  font-weight: 700;
+}
+/****** b ******/
+
+/****** paragraph ******/
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  word-spacing: 5px;
+  color: #6d7b93;
+}
+p.p12{
+  font-size: 10px;
+}
+/****** paragraph ******/
+
+/****** title ******/
+.title{
+  color: #1f3e72;  
+}
+/****** title ******/
+
+/****** table ******/
+table{
+  margin-left: auto;
+  margin-right: 20px;
+
+}
+
+table th{
+  font-size: 12px;
+  text-align: left;
+  color: #1f3e72;
+  width: 40%; 
+}
+
+table tr{
+  height: 30px;
+}
+
+table tr td a{
+  position: relative;
+  z-index: 2;
+  font-size: 10px;
+  color: #6d7b93;
+  text-decoration: none;
+}
+/****** table ******/
+
+.first-div{
+  width: 400px;
+    padding-top: 150px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+/************ FOOTER ************/
+.footer {
+  bottom: 0px;
+  width: 100%;
+  position: relative;
+  background: #eef3ff9a;
+  /*background: #eef3ffe5;*/
+}
+
+.footer section{
+  width: 90%;
+}
+
+.containerFooter{
+  position: relative;  
+  /*left: 100px;*/
+}
+
+.test{
+  width: 100%;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.trianguloFooter{
+  position: absolute;
+  bottom: -135px;
+  right: 10px;
+  z-index: -1;
+  transform: rotate(90deg) scale(.5);
+}
+
+.trianguloHeader{
+  position: absolute;
+  transform: rotate(-90deg) scale(0.3);
+  z-index: -1;
+  top:-85px;
+  left: 27%;
+}
+
+.trianguloHeaderDerecho{
+  position: absolute;  
+  z-index: -1;
+  top:17%;
+  right: 45%;
+  transform: scale(.5);
+}
+
+.iconBlue{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  top: 50%;
+  position: relative; 
+}
+
+.divBenefit{
+  height: 48px; 
+  width:48px; 
+  background: #f1f5ff; 
+  border-radius: 5px;
+/*
+  border-color: #1f3e72;
+  border-width: 5px;
+  text-align: left;
+  margin: 5px;*/
+}
+
+
+
+.divPreparation{
+  height: 24px; 
+  width:24px; 
+  background: #f1f5ff; 
+  border-radius: 5px;
+}
+
+.verticalList {
+  margin-left: 10px;
+  margin-right: 20%;
+  display:flex;
+  flex-direction: row; 
+  gap: 10px;
+   
+}
+
+#vl1:nth-child(2) {
+  padding-left: 30px;
+}
+
+.verticalList img{
+  position: relative;
+  bottom: -20px;
+  transform: translate(50% 50%);
+  width: 24px;
+  height: 24px;
+}
+
+#content{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.divBorder{
+  /*flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  align-content: stretch;*/
+  
+  border: 2px solid #fafaff;
+  justify-content: space-around;
+  border-radius: 5px;
+  height: 250px;
+  gap: 20px;
+}
+
+.divBorder:hover{
+  box-shadow: rgba(50, 62, 129, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;  
+}
+
+#divRow{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.divContact{
+  width: 160px;
+  height: 160px;
+}
+
+.divContactCenter{
+  display: flex;
+    justify-content: left;
+    left: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerVC a {
+  font-size: 12px;
+  background-color: #f1f5ff;
+  top: 50px;
+  text-align: center;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 1em;
+  color: #2f4fcd;
+  border-radius: 5px;
+}
+
+.containerVC a:hover {
+  background: linear-gradient(45deg, #3a5ad8, #2545c3);
+  color: white;
+  box-shadow: rgba(50, 62, 129, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;
+  /*1px 1px 10px 2px #2f4fcd;*/
+  
+  
+}
+
+#vl1:hover{
+  box-shadow: rgba(53, 70, 165, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;
+}
+#vl2:hover{
+  box-shadow: rgba(53, 70, 165, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;
+}
+#vl3:hover{
+  box-shadow: rgba(53, 70, 165, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;
+}
+#vl4:hover{
+  box-shadow: rgba(53, 70, 165, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;
+}
+#vl5:hover{
+  box-shadow: rgba(53, 70, 165, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;
+}
+
+.borderVL {
+  border: 1px solid #fafaff; border-radius: 1;
+} 
+
+.containerVC .verticalList img:hover {
+  background: linear-gradient(45deg, #3a5ad8, #2545c3);
+  color: white;
+  box-shadow: rgba(50, 62, 129, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;
+}
+
+.containerContact img{
+  height: 25%;
+  width: 25%;
+  background-color: #f1f5ff;
+
+}
+
+#goldIcons {
+  gap: 10px;
+}
+
+#goldIcons img{
+  top: 5px;
+  padding: 2px;
+  border-radius: 6px;
+ background: radial-gradient(#fff8e0, #fffae8);
+ padding: 5px;;
+}
+
+.imgContact{
+  width: 30px;
+  height: auto;
+  padding: 10px;
+  border-radius: 6px;  
+}
+
+#schedule {
+  position: relative;
+  width: 650px;
+  height: 70px;
+  left: 0px;
+  top: -70px;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+  background: rgba(255, 255, 255, 0.562);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#baseSchedule {
+  z-index: 1;
+  filter: blur(1px);
+  position: relative;
+  width: 650px;
+  height: 70px;
+  left: 0px;
+  top: -70;
+  /*margin: 0 auto;
+  position: fixed;*/
+  border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0.849);
+  box-shadow: rgba(50, 62, 129, 0.1) 0px 20px 25px -5px, rgba(1, 3, 39, 0.04) 0px 10px 10px -5px;  
+}
+
+.verticalList > .containerV {
+  display: flex;
+   flex-flow: column;
+   justify-content: center;
+   padding-left: 10px;
+}
+
+#vaccines option, select{
+  font-weight: bold;
+  color: #1f3e72;
+}
