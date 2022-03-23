@@ -84,6 +84,7 @@
     animation-play-state: paused;*/
   }
   
+  /*
   @keyframes shake {
     0% {
       transform: rotate(5deg);
@@ -112,7 +113,7 @@
     cursor: pointer;
     animation-play-state: running;
   }
-
+*/
   
   
   input {
@@ -274,7 +275,6 @@
     background-color: var(--main-screen-bg-color);
     border: solid black 2px;
     border-radius: 5%;
-    src: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -333,7 +333,7 @@
   }
   
   .green-screen {
-    width: 80px;
+    width: 85px;
     height: 30px;
     border-radius: 5px;
     border: solid black 2px;
@@ -347,7 +347,7 @@
     width: 100%;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    font-size: 9px;
+    font-size: 8px;
     font-weight: bold;
     overflow-wrap: break-word;
   }
@@ -486,7 +486,7 @@
     border-bottom-right-radius: 10px;
   }
   #right-panel::before {
-    content: '';
+    /*content: '';*/
     position: absolute;
     left: -3px;
     bottom: 0;
@@ -502,6 +502,19 @@
     align-items: center;
   }
 
+  #divMovements{   
+    top: 1rem;
+    height: 2rem;
+    width: 10rem;
+    font-size: .7em;
+    overflow: auto;
+  }
+
+  .vertical-container {
+    display: table-row;
+    justify-content: end;  
+  }
+
 
   .empty-container{
     display: flex;
@@ -511,7 +524,7 @@
 
   .right-panel-screen {
     font-family: 'Press Start 2P', cursive;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-top: 8px;
     width: 180px;
     height: 64px;
@@ -530,9 +543,14 @@
   }
 
   .right-panel-screen .stats {
-      font-weight: bolder;
-      font-size: 7.5px;
+      color: rgb(236, 173, 13);
+      font-weight: bold;
+      font-size: 6px;
       margin-left: 3px;
+  }
+
+  .statsBlue {
+    color: #1abafa;
   }
 
   
