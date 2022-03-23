@@ -9,6 +9,7 @@ const fetchPokemon = () =>  {
             noImg.src = "./assets/img/pokemon-sad.gif";
             
             const pokeName = document.getElementById("name-screen");
+            const pokeMovs = document.getElementById("divMovements"); 
             const pokeHP = document.getElementById("hp");
             const pokeAttack = document.getElementById("attack");
             const pokeDefense = document.getElementById("defense");
@@ -19,6 +20,7 @@ const fetchPokemon = () =>  {
             const pokeType = document.getElementById("type-screen");
 
             pokeName.innerHTML = "------";
+            pokeMovs.innerHTML = "--------------------";
             pokeHP.innerHTML = "--";
             pokeAttack.innerHTML = "--";
             pokeDefense.innerHTML = "--";
@@ -34,6 +36,7 @@ const fetchPokemon = () =>  {
         console.log(data);
         let pokeName = data.name;
         let pokeImg = data.sprites.front_default;
+        let pokeMovs = data.moves;
         let arrayStats = data.stats;
         let pokeHP = arrayStats[0].base_stat;
         let pokeAttack = arrayStats[1].base_stat;
@@ -46,14 +49,15 @@ const fetchPokemon = () =>  {
         let pokeType = arrayType[0].type.name;
 
         console.log(pokeImg);
-        pokeData(pokeName, pokeImg, pokeHP, pokeAttack, pokeDefense, pokeSAttack, pokeSDefense, pokeSpeed, pokeId, pokeType);
+        pokeData(pokeName, pokeImg, pokeMovs, pokeHP, pokeAttack, pokeDefense, pokeSAttack, pokeSDefense, pokeSpeed, pokeId, pokeType);
     })
 }
 
-//fetchPokemon();
-    const pokeData = (name, url, hp, attack, defense, sAttack, sDefense, speed, id, type) => {
+
+    const pokeData = (name, url, movs, hp, attack, defense, sAttack, sDefense, speed, id, type) => {
         const pokeName = document.getElementById("name-screen");
-        const pokeImg = document.getElementById("pokeImg"); 
+        const pokeImg = document.getElementById("pokeImg");
+        const pokeMovs = document.getElementById("divMovements"); 
         const pokeHP = document.getElementById("hp");
         const pokeAttack = document.getElementById("attack");
         const pokeDefense = document.getElementById("defense");
@@ -63,8 +67,16 @@ const fetchPokemon = () =>  {
         const pokeId = document.getElementById("poke-Id");
         const pokeType = document.getElementById("type-screen");
         
+         
+        pokeMovs.innerHTML = `<p>Movements (${movs.length}):</p>`;
+
         pokeImg.src = url;
         pokeName.innerHTML = name.toUpperCase();
+        
+        for (let index = 0; index < movs.length; index++) {
+            pokeMovs.innerHTML += `<p>${index+1+"."} ${movs[index].move.name}</p>`;
+        }
+        
         pokeHP.innerHTML = hp;
         pokeAttack.innerHTML = attack;
         pokeDefense.innerHTML = defense;
