@@ -102,7 +102,7 @@ const fetchPokemon = () =>  {
                 pokeImg.style.backgroundColor = '#f8d030';
                 break;
             case 'ice':
-                pokeImg.style.backgroundColor = '#f08030';
+                pokeImg.style.backgroundColor = '#6ad4eb';
                 break;               
             case 'fighting':
                 pokeImg.style.backgroundColor = '#c03028';
